@@ -49,7 +49,7 @@ txtrst='\e[0m'    # Text Reset
 
 
 # Setup the normal PS1 here
-PS1="\[$bldgrn\][\[$txtrst\] \[$bldpur\]\u: \[$royal_blue\]\W \[$txtrst\]\[$bldgrn\]]\[$txtrst\] \[$bldylw\]=>\[$txtrst\] "
+PS1="\[$bldblu\][\[$txtrst\] \[$bldgrn\]\u: \[$bldylw\]\W \[$txtrst\]\[$bldblu\]]\[$txtrst\] \[$bldblu\]=>\[$txtrst\] "
 
 
 LS_COLORS="di=1;96:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90"
