@@ -33,7 +33,7 @@ alias qpush='git add --all && git commit -m "-" && git push'
 # -------------------------------------
 # making the python 3 the default interpreter.
 alias python=python3
-alias ipy=ipython        # quicker access to ipython
+alias ipy=ipython3        # quicker access to ipython
 
 alias deac='deactivate'  # for virtual environments
 alias ':q'='exit'
