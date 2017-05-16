@@ -1,0 +1,500 @@
+   68  route -n
+   69  sudo reboot
+   70  sudo cp /etc/network/interfaces ~/RaspberryPi/interfaces
+   71  cd RaspberryPi/
+   72  l
+   73  v interfaces
+   74  l
+   75  ll
+   76  chmod +rw wpa_supplicant.conf 
+   77  sudo chmod +rw wpa_supplicant.conf 
+   78  c
+   79  sudo chmod +rw wpa_supplicant.conf 
+   80  l
+   81  ll
+   82  sudo chmod +rw wpa_supplicant.conf 
+   83  c
+   84  ll
+   85  sudo chmod +rw interfaces
+   86  v interfaces
+   87  l
+   88  l
+   89  chmod -R 777 interfaces
+   90  chmod -R 777 interfacess
+   91  chmod -R 777 interface
+   92  chmod -R 777 interfaces
+   93  sudo chmod -R 777 interfaces
+   94  c
+   95  sudo chmod -R 777 wpa_supplicant.conf 
+   96  l
+   97  v wpa_supplicant.conf 
+   98  c
+   99  q
+  100  ls
+  101  hostname -I
+  102  ping localhost
+  103  ping google.com
+  104  ping ww.google.com
+  105  ping www.google.com
+  106  ls
+  107  sudo vim /etc/rc.local 
+  108  c
+  109  sudo ufw status verbose
+  110  hostname -I
+  111  vim .ssh/known_hosts 
+  112  sudo vim .ssh/known_hosts 
+  113  c
+  114  l
+  115  hostname -I
+  116  ping www.google.com
+  117  sudo ifconfig wlan0 10.2.80.43
+  118  hostname -I
+  119  sudo vim /etc/network/interfaces
+  120  sudo ifdown wlan0
+  121  sudo ifup wlan0
+  122  hostname -I
+  123  hostname -A
+  124  hostname -I
+  125  hostname -A
+  126  vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  127  sudo vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  128  iwlist 
+  129  iwlist scan
+  130  clear
+  131  iwlist scan
+  132  l
+  133  vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  134  c
+  135  sudo vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  136  sudo ifdown wlan0
+  137  hostname -I
+  138  ping example.com
+  139  vim /etc/resolv.conf 
+  140  c
+  141  sudo vim /etc/resolv.conf 
+  142  sudo iface wlan0 inet dhcp
+  143  iface wlan0 inet dhcp
+  144  cat /etc/network/interfaces
+  145  iface
+  146  vim /etc/network/interfaces
+  147  suddo vim /etc/network/interfaces
+  148  sddo vim /etc/network/interfaces
+  149  sudo vim /etc/network/interfaces
+  150  sudo ifdown wlan0
+  151  sudo ifup wlan0
+  152  sudo vim /etc/network/interfaces
+  153  sudo ifup wlan0
+  154  ping google.com
+  155  ping www.google.com
+  156  sudo vim /etc/network/interfaces
+  157  sudo ifdown wlan0
+  158  ping google.com
+  159  ping www.google.com
+  160  hostname -I
+  161  sudo ifup wlan0
+  162  ping 10.1.50.5
+  163  ssh pi@10.1.50.5
+  164  hostname -I
+  165  ssh  pi@10.1.50.5
+  166  ping google.com
+  167  sudo vim /etc/resolv
+  168  sudo vim /etc/resolv.conf 
+  169  sudo ifdown wlan0
+  170  sudo ifup wlan0
+  171  check if ps -ef|grep "ssh"|grep -v grep
+  172  ps -ef|grep "ssh"|grep -v grep
+  173  vim .ssh/authorized_keys 
+  174  sudo vim .ssh/authorized_keys 
+  175  l
+  176  sudo vim .ssh/known_hosts 
+  177  hostname -I
+  178  iptables -L
+  179  sudo ufw status verbose
+  180  ping 8.8.8.
+  181  ping 8.8.8.8
+  182  arp -n
+  183  vim /etc/network/inteerfaces
+  184  sudo vim /etc/network/interfaces
+  185  sudo reboot
+  186  hostname -I
+  187  ping google.com
+  188  ifcongif
+  189  ifconfig
+  190  sudo ifup wlan0
+  191  sudo ifdown wlan0
+  192  sudo ifup wlan0
+  193  hostname -I
+  194  q
+  195  ipy
+  196  ipy
+  197  ..
+  198  l
+  199  cd LIFEBUD/
+  200  ipy
+  201  ipy
+  202  ipy
+  203  ipy
+  204  ipy
+  205  q
+  206  ls
+  207  cd Test_MMA8452/
+  208  l
+  209  python
+  210  l
+  211  v MMA8452.py 
+  212  tm
+  213  echo "alias tm=tmux" >> ~/.bash_aliases 
+  214  l
+  215  v MMA8452.py 
+  216  tm
+  217  source ~/.bash_aliases 
+  218  tm
+  219  ls
+  220  q
+  221  ls
+  222  hostname -I
+  223  ls
+  224  for i in {1..5}; do echo $i; done
+  225  for i in {1..100}; do echo $i; done
+  226  for i in {1..1000}; do echo $i; done
+  227  for i in {1..100000}; do echo $i; done
+  228  l
+  229  ls
+  230  for i in {1..100}; do echo $i; done
+  231  for i in {1..100}; do echo $i; done
+  232  c
+  233  i
+  234  ls
+  235  l
+  236  l
+  237  l
+  238  v MMA8452.py 
+  239  l
+  240  ..
+  241  l
+  242  cd LIFEBUD/
+  243  l
+  244  v MMA8452.py 
+  245  qpush
+  246  sudo shutdown -h now
+  247  hostname -U
+  248  hostname -I
+  249  sudo vim /etc/resolv
+  250  sudo vim /etc/resolv.conf 
+  251  sudo ifdown wlan0
+  252  sudo ifup wlan0
+  253  hostnam e-I
+  254  hostname -I
+  255  hostname -I
+  256  q
+  257  ls
+  258  cd life
+  259  cd LIFEBUD/
+  260  l
+  261  v main.py 
+  262  l
+  263  tmuz
+  264  tmux
+  265  l
+  266  v mani
+  267  v main.py 
+  268  ipy
+  269  sudo ipython
+  270  sudo ipython
+  271  vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  272  sudo vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  273  l
+  274  sudo vim /etc/network/interfaces
+  275  k
+  276  c
+  277  l
+  278  o
+  279  jjjjjjjjjcd Test_MMA8452/
+  280  l
+  281  ..
+  282  l
+  283  cd LIFEBUD/
+  284  l
+  285  v main.py 
+  286  sudo shitdown -h hnow
+  287  sudo shutdown -h now
+  288  cd LIFEBUD/
+  289  l
+  290  v main.py 
+  291  l
+  292  l
+  293  c
+  294  l
+  295  sudo python main.py 
+  296  ls
+  297  sudo python main.py 
+  298  ls
+  299  v MMA8452.py
+  300  sudo python mi
+  301  sudo python main.py 
+  302  ls
+  303  vimm main.py 
+  304  vim main.py 
+  305  l
+  306  sudo shutdown -h now
+  307  ls
+  308  which pi
+  309  which pip
+  310  pip
+  311  conda
+  312  python3
+  313  sudo apt-get install ipython3
+  314  python3
+  315  python3 -m pip
+  316  wget https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py
+  317  python3 get-pip.py 
+  318  rm get-pip.py 
+  319  wget https://bootstrap.pypa.io/get-pip.py
+  320  python get-pip.py 
+  321  python3 get-pip.py 
+  322  sudo python3 get-pip.py 
+  323  pip
+  324  ipython
+  325  ipython3
+  326  ls
+  327  sudo shutdown -h now
+  328  ls
+  329  cd
+  330  l
+  331  hostname -I
+  332  exit
+  333  cp -r LIFEBUD/ /mnt/usb/pyLifebud/
+  334  ls LIFEBUD/
+  335  rm -rf LIFEBUD/__pycache__/
+  336  l
+  337  ls LIFEBUD/
+  338  cd LIFEBUD/
+  339  l
+  340  cp * /mnt/usb/pyLifebud/
+  341  sudo cp * /mnt/usb/pyLifebud/
+  342  q
+  343  ls
+  344  cd /mnt/usb
+  345  l
+  346  mkdir pyLifebud
+  347  sudo mkdir pyLifebud
+  348  ls
+  349  ls pyLifebud/
+  350  ls
+  351  cd pyLifebud/
+  352  l
+  353  c
+  354  l
+  355  cp MMA8452.py HoneywellSensor.py 
+  356  sudo cp MMA8452.py HoneywellSensor.py 
+  357  ls
+  358  vim HoneywellSensor.py 
+  359  sudo vim HoneywellSensor.py 
+  360  sudo chmod +w HoneywellSensor.py 
+  361  vim HoneywellSensor.py 
+  362  sudo vim HoneywellSensor.py 
+  363  sudo chmod +w HoneywellSensor.py 
+  364  q
+  365  sudo ipython
+  366  sudo ipython3
+  367  q
+  368  ls
+  369  i
+  370  l
+  371  c
+  372  ic
+  373  ls
+  374  i
+  375  hostname -I
+  376  ls
+  377  vim /etc/resolv.conf 
+  378  sudovim /etc/resolv.conf 
+  379  sudo vim /etc/resolv.conf 
+  380  ls
+  381  cd LIFEBUD/
+  382  l
+  383  gs
+  384  ls /dev/sd*
+  385  ls /dev/sd1
+  386  ls /dev/sda1
+  387  cd /dev/sda1
+  388  c
+  389  l
+  390  ls /dev/
+  391  c
+  392  v ~/.bash_aliases 
+  393  ls
+  394  reset
+  395  ls
+  396  ls /dev
+  397  ls /dev/sda
+  398  ls
+  399  lsblk
+  400  sudo mount /dev/sda /mnt/usb
+  401  mkdir -p /mnt/usb
+  402  sudo mkdir -p /mnt/usb
+  403  sudo mount /dev/sda /mnt/usb
+  404  sudo mount /dev/sda1 /mnt/usb
+  405  cd /mnt/usb
+  406  l
+  407  ..
+  408  l
+  409  ..
+  410  cd
+  411  l
+  412  c
+  413  l
+  414  vim ~/.bash_aliases
+  415  cd usb
+  416  l
+  417  reset
+  418  c
+  419  l
+  420  tm
+  421  ls
+  422  cd LIFEBUD/
+  423  l
+  424  cp MMA8452.py ./HoneywellSensor.py
+  425  vim HoneywellSensor.py 
+  426  v main.py 
+  427  l
+  428  v HoneywellSensor.py 
+  429  q
+  430  ls
+  431  ls
+  432  sudo umount /mnt/usb 
+  433  sudo shutdown -h now
+  434  sudo service transmission-daemon restart
+  435  sudo service transmission-daemon restart
+  436  q
+  437  python
+  438  c
+  439  lss
+  440  sudo apt-get install python-scapy
+  441  https://gist.githubusercontent.com/tofuseng/7b659cf16faa821bdd80/raw/9139453908c612e3f94c621a8a9d319e02800d11/wifikill.py
+  442  c
+  443  wget https://gist.githubusercontent.com/tofuseng/7b659cf16faa821bdd80/raw/9139453908c612e3f94c621a8a9d319e02800d11/wifikill.py
+  444  ls
+  445  mkdir hack
+  446  mv wifikill.py hack
+  447  l
+  448  cp hack/wifikill.py ..
+  449  cp hack/wifikill.py .
+  450  l
+  451  sudo python2.7 wifikill.py 
+  452  tmux
+  453  sudo python2.7 wifikill.py 
+  454  sudo python2.7 wifikill.py 
+  455  sudo python2.7 wifikill.py 
+  456  vim wifikill.py 
+  457  python2.7 -m pip install requests
+  458  wget https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwiOq8X__LrSAhWLx4MKHZzqB24QFggcMAA&url=https%3A%2F%2Fbootstrap.pypa.io%2Fget-pip.py&usg=AFQjCNE8Fo9j_sgo1hBzEoUT39H85hFDrg&sig2=5ZwC0ft3ewt8JEQ4fF8Fag
+  459  l
+  460  rm url\?sa\=t 
+  461  curl https://bootstrap.pypa.io/get-pip.py | python
+  462  curl https://bootstrap.pypa.io/get-pip.py | python2.7
+  463  python2.7 
+  464  wget https://bootstrap.pypa.io/get-pip.py
+  465  rm get-pip.py.1 
+  466  l
+  467  python2.7 get-pip.py 
+  468  sudo python2.7 get-pip.py 
+  469  python2.7 -m pip install requests
+  470  sudo python2.7 -m pip install requests
+  471  ls
+  472  vim wifikill.py 
+  473  sudo python2.7 get-pip.py 
+  474  sudo python2.7 wifikill.py 
+  475  sudo python2.7 wifikill.py 
+  476  arp -a
+  477  sudo python2.7 wifikill.py 
+  478  git clone https://github.com/k4m4/kickthemout.git
+  479  cd kickthemout
+  480  pip install -r requirements.txt
+  481  python kickthemout.py 
+  482  python2.7 kickthemout.py 
+  483  sudo python2.7 kickthemout.py 
+  484  sudo python2.7 kickthemout.py 
+  485  sudo python2.7 kickthemout.py 
+  486  exit
+  487  iwconfig wlan0 
+  488  cat modemon.sh 
+  489  vim modemon.sh 
+  490  sudo ./modemon
+  491  sudo ./modemon.sh 
+  492  vim modemon.sh 
+  493  sudo ./modemon.sh 
+  494  kkjjjjjjii
+  495  ii
+  496  iwconfig 
+  497  l
+  498  q
+  499  sudo shutdown -h now
+  500  hostname -I
+  501  ls
+  502  hostname -I
+  503  vim /etc/network/interfaces
+  504  c
+  505  vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  506  c
+  507  sudo vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  508  l
+  509  cd /etc/
+  510  l
+  511  cd network/
+  512  l
+  513  vim interfaces
+  514  c
+  515  l
+  516  ..
+  517  cd wpa_supplicant/
+  518  l
+  519  vim wpa_supplicant.conf 
+  520  sudo vim wpa_supplicant.conf 
+  521  l
+  522  c
+  523  l
+  524  ..
+  525  l
+  526  ..
+  527  l
+  528  cd
+  529  hostname _i
+  530  hostname -I
+  531  ls
+  532  cd RaspberryPi/
+  533  l
+  534  vim interfaces
+  535  c
+  536  l
+  537  vim wpa_supplicant.conf 
+  538  c
+  539  l
+  540  history
+  541  vim /etc/resolv.conf 
+  542  c
+  543  sudo /etc/resolvconf/
+  544  c
+  545  sudo /etc/resolvconf/
+  546  l
+  547  sudo vim /etc/resolve.cong
+  548  sudo vim /etc/resolve.conf
+  549  c
+  550  sudo vim /etc/resolv.conf 
+  551  sudo vim /etc/resolvconf.conf 
+  552  sudo vim /etc/resolve.conf
+  553  c
+  554  sudo vim /etc/resolvconf.conf 
+  555  c
+  556  sudo vim /etc/resolv.conf 
+  557  sudo ifdown wlan0
+  558  sudo iw dev wlan0 interface add mon0 type monitor
+  559  history
+  560  iwconfig 
+  561  sudo ifup wlan0
+  562  hostname -I
+  563  hostname -I
+  564  
+  565  c
+  566  history
+  567  history >> history_save_spring2017.txt
