@@ -1,0 +1,500 @@
+  179  c
+  180  ls
+  181  vim interfaces
+  182  sudo vim interfaces
+  183  sudo ifdown wlan0
+  184  sudo ifup wlan0
+  185  sudo vim /etc/network/interfaces
+  186  sudo ifdown wlan0
+  187  sudo ifup wlan0
+  188  vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  189  sudo vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  190  sudo interfaces.d/
+  191  sudo vim interfaces
+  192  sudo ifdown wlan0
+  193  sudo ifup wlan0
+  194  hostname -I
+  195  vim interfaces
+  196  vim interfaces
+  197  sudo vim interfaces
+  198  sudo ifdown wlan0
+  199  sudo ifup wlan0
+  200  sudo vim interfaces
+  201  sudo ifdown wlan0
+  202  sudo ifup wlan0
+  203  hostname -I
+  204  hostname -I
+  205  hostname -I
+  206  hostname -I
+  207  hostname -I
+  208  sudo vim interfaces
+  209  hostname -I
+  210  sudo ifdown wlan0
+  211  sudo ifup wlan0
+  212  hostname -I
+  213  sudo vim /etc/resolv.conf 
+  214  sudo ifdown wlan0
+  215  sudo ifup wlan0
+  216  hostname -I
+  217  arp -a
+  218  sudo ifdown wlan0
+  219  sudo ifup wlan0
+  220  ls
+  221  hostname -I
+  222  ufw
+  223  ufw list
+  224  sudo ufw status
+  225  netstat -nr
+  226  sudo systemctl stop dhcpcd.service
+  227  sudo systemctl stop dhcpcd.service
+  228  sudo systemctl daemon-reload 
+  229  hostname -I
+  230  vim /etc/network/interfaces
+  231  sudo vim /etc/network/interfaces
+  232  sudo ufw disable 
+  233  sudo ifconfig -a
+  234  arp -n
+  235  vim interfaces
+  236  sudo vim interfaces
+  237  arp -n
+  238  netstat -rn
+  239  According to what's in your PasteBin, the "connection refused" indicates you're getting a TCP reset from whatever is at that IP address.
+  240  Sanity check: While troubleshooting, DISABLE ufw.
+  241  With your desktop firewall disabled, can you ping the Pi from your desktop? Can you ping the desktop from your Pi?
+  242  After attempting the ping in both directions, look at the output of 'arp -n' on both machines. Do they see each other's MAC (Ethernet hardware) addresses or is something redirecting/intercepting the traffic?
+  243  If you can ping in both directions and 'arp -n' indicates the proper MAC addresses are being used (check 'ifconfig' on the opposite machine), the next step is to examine /var/log/auth.log on the Pi. It should tell you what's wrong with the connection attempt.
+  244  If the above doesn't help, please show us the output from the following commands on the Pi:
+  245  sudo ifconfig -a
+  246  cat /etc/resolv.conf
+  247  arp -n
+  248  netstat -rn
+  249  sudo iptables-save
+  250  sudo grep ssh /var/log/auth.log | tail -50
+  251  And on your desktop:
+  252  sudo ifconfig -a
+  253  cat /etc/resolv.conf
+  254  arp -n
+  255  netstat -rn
+  256  sudo iptables-save
+  257  I see some of this pasted in the comments above, but the whole thing is important to grab with the firewall off, first. If you can make it work with the firewall off, then you can proceed to troubleshooting your firewall rules.
+  258  Also, even if you're targeting an IP address, DNS settings still matter because SSH uses DNS during host key validation.
+  259  shareimprove this answer
+  260  sudo iptables-save
+  261  sudo grep ssh /var/log/auth.log | tail -50
+  262  sudo vim ~/.ssh/known_hosts 
+  263  c
+  264  cd
+  265  cd .ssh
+  266  l
+  267  vim known_hosts 
+  268  sudo vim authorized_keys 
+  269  q
+  270  hostname -I
+  271  arp -na | grep -i b8:27:eb
+  272  sudo reboot
+  273  sudo raspi-config 
+  274  apt-get update
+  275  sudo apt-get update
+  276  sudo apt-get install tor
+  277  sudo vim /etc/tor/torrc 
+  278  c
+  279  sudo vim /etc/tor/torrc 
+  280  sudo vim /etc/tor/torrc 
+  281  export SERVICE_DIR=/var/lib/tor/sshd
+  282  export SERVICE_DIR=/var/lib/tor/sshd/
+  283  exho $SERVICE_DIR 
+  284  echo $SERVICE_DIR 
+  285  mkdir $SERVICE_DIR
+  286  sudo mkdir $SERVICE_DIR
+  287  sudo chmod 700 $SERVICE_DIR
+  288  sudo chown debian-tor.debian-tor $SERVICE_DIR
+  289  chown debian-tor.debian-tor $SERVICE_DIR
+  290  sudo debian-tor.debian-tor $SERVICE_DIR
+  291  sudo chown debian-tor.debian-tor $SERVICE_DIR
+  292  systemctl enable tor
+  293  sudo systemctl enable tor
+  294  sudo systemctl start tor
+  295  cat $SERVICE_DIR/hostname
+  296  sudo cat $SERVICE_DIR/hostname
+  297  sudo cat $SERVICE_DIRhostname
+  298  sudo cat $SERVICE_DIR/hostname
+  299  sudo chmod 700 $SERVICE_DIR
+  300  sudo chown debian-tor.debian-tor $SERVICE_DIR
+  301  systemctl enable tor
+  302  sudo systemctl enable tor
+  303  sudo systemctl start tor
+  304  cat $SERVICE_DIR/hostname
+  305  sudo cat $SERVICE_DIR/hostname
+  306  ls /var/lib/tor
+  307  sudo -i /var/lib/tor
+  308  sudo -i
+  309  cat $SERVICE_DIR/hostname
+  310  echo $SERVICE_DIR
+  311  vim ~/.profile 
+  312  c
+  313  vim /etc/tor/torrc 
+  314  c
+  315  vim ~/.profile 
+  316  source ~/.profile 
+  317  echo $SERVICE_DIR 
+  318  mkdir $SERVICE_DIR
+  319  sudo mkdir $SERVICE_DIR
+  320  sudo chmod 700 $SERVICE_DIR
+  321  sudo chown debian-tor.debian-tor $SERVICE_DIR
+  322  systemctl enable tor
+  323  sudo systemctl enable tor
+  324  sudo systemctl start tor
+  325  sudo cat $SERVICE_DIR/hostname
+  326  sudo shutdown -h now
+  327  ls
+  328  l
+  329  ls
+  330  vim ~/.profile 
+  331  ls
+  332  ls
+  333  sudo shutdown -h now
+  334  ls
+  335  ls
+  336  ls
+  337  gd
+  338  l
+  339  q
+  340  python
+  341  python
+  342  c
+  343  sudo apt-get install python-dev python-rpi.gpio
+  344  python
+  345  python2.7
+  346  vim battery.py 
+  347  q
+  348  python2.7
+  349  q
+  350  ls
+  351  cd jd/
+  352  ll
+  353  rm .battery.py.swp 
+  354  l
+  355  tmux
+  356  sudo shutdown -h now
+  357  echo $PI_ADDR
+  358  q
+  359  ls
+  360  l
+  361  ll
+  362  q
+  363  l
+  364  q
+  365  ls
+  366  q
+  367  sudo shutdown -h now
+  368  hostname -I
+  369  q
+  370  ls
+  371  l
+  372  cd hack/
+  373  l
+  374  vim wifikill.py 
+  375  l
+  376  q
+  377  sudo shutdown -h now
+  378  ls
+  379  tor
+  380  sudo service tor start
+  381  sudo service tor status
+  382  sudo update-rc.d tor enable
+  383  tor
+  384  sudo apt-get update
+  385  ls
+  386  sudo apt-get upgrade
+  387  sudo reboot
+  388  ls
+  389  sudo apt-get install python3.6
+  390  sudo apt-get update python
+  391  sudo apt-get instal  python --upgrade
+  392  sudo apt-get install python 
+  393  sudo apt-get install python3
+  394  python3
+  395  l
+  396  python
+  397  ls
+  398  sys
+  399  uname -r
+  400  lsb_release -a
+  401  sudo apt-get install python3-pip python3-dev
+  402  wget https://github.com/samjabrahams/tensorflow-on-raspberry-pi/releases/download/v1.0.1/tensorflow-1.0.1-cp34-cp34m-linux_armv7l.whl
+  403  sudo pip3 install tensorflow-1.0.1-cp34-cp34m-linux_armv7l.whl
+  404  sudo pip3 uninstall mock
+  405  clera
+  406  c
+  407  sudo pip3 uninstall mock
+  408  sudo pip3 install mock
+  409  git clone https://github.com/tensorflow/tensorflow
+  410  ls
+  411  ls -l
+  412  tree
+  413  tree -L 2
+  414  tree -L 1
+  415  ls
+  416  cd FTP
+  417  l
+  418  rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  419  c
+  420  rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  421  rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  422  rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  423  l
+  424  ..
+  425  l
+  426  v modemon.sh 
+  427  l
+  428  l
+  429  rm get-pip.py 
+  430  l
+  431  vim wifikill.py 
+  432  l
+  433  cd .vim/m
+  434  l
+  435  cd .vim
+  436  l
+  437  cd colors/
+  438  l
+  439  wget https://raw.githubusercontent.com/chapnickc/dotfiles/dev/vim/colors/zeno2.vim
+  440  cd
+  441  l
+  442  vim .vimrc
+  443  vim .vimrc
+  444  ls
+  445  ls
+  446  ls
+  447  cd FTP/
+  448  l
+  449  vim testi2c.py 
+  450  l
+  451  ..
+  452  l
+  453  cd torrents/
+  454  l
+  455  ..
+  456  l
+  457  vim modemon.sh 
+  458  vim ~/.vimrc
+  459  vim ~/.vimrc
+  460  ls
+  461  cd RaspberryPi/
+  462  la
+  463  qpush
+  464  ls
+  465  ..
+  466  l
+  467  cd Test_MMA8452/
+  468  l
+  469  vim max30100_config.py 
+  470  l
+  471  vim max30100
+  472  vim MAX30100.py 
+  473  l
+  474  vim MMA8452.py 
+  475  l
+  476  ..
+  477  l
+  478  cd LIFEBUD/
+  479  l
+  480  vim HoneywellSensor.py 
+  481  l
+  482  vim main.py 
+  483  l
+  484  ..
+  485  l
+  486  cd hack/
+  487  l
+  488  vim wifikill.py 
+  489  l
+  490  ..
+  491  l
+  492  sudo shutdown -h now
+  493  l
+  494  cd kickthemout/
+  495  l
+  496  vim spoof.py
+  497  l
+  498  ..
+  499  l
+  500  cd tem
+  501  vim temp.txt 
+  502  l
+  503  rm temp.txt 
+  504  l
+  505  ls
+  506  vim modemon.sh 
+  507  l
+  508  cd LIFEBUD/
+  509  l
+  510  ..
+  511  l
+  512  rm -rf LIFEBUD/
+  513  l
+  514  cd torrents/
+  515  l
+  516  la 
+  517  ls -r
+  518  ls ./*
+  519  t
+  520  tree
+  521  ..
+  522  l
+  523  rm -rf Test_MMA8452/
+  524  l
+  525  rm -rf Test_MAX30100/
+  526  l
+  527  cd tensorflow/
+  528  l
+  529  ..
+  530  l
+  531  rm -rf tensorflow
+  532  l
+  533  cd RaspberryPi/
+  534  l
+  535  ..
+  536  l
+  537  la
+  538  ls
+  539  rm tensorflow-1.0.1-cp34-cp34m-linux_armv7l.whl 
+  540  l
+  541  c
+  542  l
+  543  cd Lab/
+  544  l
+  545  vim testi2c.py 
+  546  l
+  547  vim testi2c.py 
+  548  l
+  549  ..
+  550  l
+  551  la Lab/
+  552  rm -rf Lab/
+  553  l
+  554  vim ~/.profile 
+  555  vim ~/.profile 
+  556  c
+  557  ls
+  558  reset
+  559  ls
+  560  vim ~/.profile 
+  561  reset
+  562  ls
+  563  vim ~/.profile 
+  564  reset
+  565  ls
+  566  c
+  567  l
+  568  cd gt
+  569  l
+  570  cd jd/
+  571  l
+  572  ..
+  573  l
+  574  cd RaspberryPi/
+  575  l
+  576  cd tmux/
+  577  l
+  578  ..
+  579  l
+  580  pwd
+  581  l
+  582  vim ~/.profile 
+  583  reset
+  584  l
+  585  c
+  586  l
+  587  ..
+  588  l
+  589  cd kickthemout/
+  590  l
+  591  ..
+  592  l
+  593  rm -rf kickthemout/
+  594  l
+  595  cd jd/
+  596  l
+  597  vim battery.py 
+  598  l
+  599  ..
+  600  l
+  601  rm -rf jd/
+  602  l
+  603  cd hack/
+  604  l
+  605  vim wifikill.py 
+  606  l
+  607  vim wifikill.py 
+  608  l
+  609  ls
+  610  ls
+  611  ..
+  612  l
+  613  rm -rf hack/
+  614  l
+  615  cd FTP/
+  616  l
+  617  rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  618  l
+  619  gf
+  620  fd
+  621  df
+  622  df -h
+  623  ls
+  624  df -h .
+  625  ls -lh
+  626  l
+  627  df -h
+  628  ls
+  629  rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  630  rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  631  l
+  632  sudo rm The.Departed.2006.BluRay.1080p.x264.YIFY.mp4 
+  633  ls
+  634  df -h
+  635  ls
+  636  vim testi2c.py 
+  637  l
+  638  ..
+  639  l
+  640  rm FTP/testi2c.py 
+  641  set -o keys vi
+  642  clc
+  643  l
+  644  clear
+  645  ls
+  646  l
+  647  cd FTP/
+  648  l
+  649  sudo rm testi2c.py 
+  650  ls
+  651  ..
+  652  l
+  653  cd mode
+  654  l
+  655  rm wifikill.py 
+  656  l
+  657  c
+  658  l
+  659  vim modemon.sh 
+  660  l
+  661  rm modemon.sh 
+  662  l
+  663  la
+  664  ls
+  665  ls
+  666  pwd
+  667  l
+  668  df -h
+  669  l
+  670  cd RaspberryPi/
+  671  l
+  672  vim install.sh 
+  673  l
+  674  vim history_save_spring2017.txt 
+  675  l
+  676  history
+  677  l
+  678  history >> history_save_may15_2017_w_tor.txt
